@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Clicker</title>
+</head>
+<body>
+    <script type="text/javascript">
+var clicks = 0
+function countClicks() {
+    clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks;
+
+};
+    </script>
+
+
+<script type="text/javascript">
+    var clicks = 0
+    function countClickss() {
+        clicks += 10;
+        document.getElementById("clicks").innerHTML = clicks;
+    
+    };
+        </script>
+
+<script type="text/javascript">
+    var clicks = 0
+    function countClicksss() {
+        clicks = 0;
+        document.getElementById("clicks").innerHTML = clicks;
+    
+    };
+        </script>
+
+    <center>
+    <button type="button" onClick ="countClicks()">Click</button>
+    <button type="button" onClick ="countClickss()">MegaClick</button>
+    <center>
+        <hr>
+    <button type="button" onClick ="countClicksss()">Clear</button>
+    </center>
+    </hr>
+    <p>Clicks: <a id="clicks">0</a></p>
+    </center>
+    
+</body>
+
+</html>
